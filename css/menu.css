@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .intro{
     font-size: 2rem;
     text-align: center;
@@ -22,11 +27,19 @@ hr{
     margin: 30px auto;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
 .accordion{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .accordion li{
@@ -77,22 +90,68 @@ input[type='radio']{
 }
 
 .card{
-    height: 600px;
+    height: 550px;
     margin: 0 10px;
     box-sizing: border-box;
+    padding: 10px;
 }
 
+.card-body{
+    width: 100%;
+    height: 100px;
+}
+
+.btn-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.btn-card{
+    transition: .5s all;
+}
+
+.btn-card:hover{
+    border: none;
+    background-color: #b44e00;
+    scale: 1.1;
+}
 .i-container{
-    height: 350px;
-    object-fit: cover;
-    padding: 1px;
+    height: 300px;
+    background-color: black;
 }
 
 .i-card{
     width: 100%;
-    height: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .extensivel{
     margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width:365px) {
+    .card{
+        width: 300px;
+        height: 450px;
+        margin: 0 10px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .i-container{
+        height: 200px;
+        background-color: black;
+    }
+    
+    .i-card{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 }

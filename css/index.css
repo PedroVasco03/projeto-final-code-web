@@ -694,9 +694,9 @@ a:active ~ .nav{
 .i{
     position: absolute;
     z-index: 2;
-    width: 100px;
+    width: 200px;
     top: 50%;
-    left: 50%;
+    left: 38%;
     transform: translate(-2000px, -50px);
     transition: .8s;
     transition-timing-function: ease-in;
