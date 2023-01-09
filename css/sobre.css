@@ -52,7 +52,6 @@ hr{
     height: 400px;
     background-color:#b44e0063;
     border-radius: 10px;
-    
     margin-left: 2%;
 }
 
@@ -95,6 +94,10 @@ hr{
     margin: 30px auto;
 }
 
+.container-equipe{
+    margin-bottom: 100px;
+}
+
 .card{
     width: 350px;
     height: 320px;
@@ -118,4 +121,12 @@ hr{
 .card:hover{
     background: #b44e0050;
     border-radius: 20%;
+}
+
+.container-descricao{
+    margin-top: 100px;
+}
+
+.descricao:last-child{
+    margin-bottom: -50px;
 }
